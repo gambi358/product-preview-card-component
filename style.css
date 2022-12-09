@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&display=swap');
+
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background-color: hsl(30, 38%, 92%);
+	min-height: 100vh;
+	width: 1440px;
+	margin: 0 auto;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-family: 'Montserrat', sans-serif;
+
+}
+
+
+.box-container {
+	width: 40vw;
+	height: 450px;
+	display: flex;
+
+}
+
+.description {
+	width: 50%;
+	background-color: #fff;
+	border-radius: 0 10px 10px 0;
+	padding: 30px;
+
+}
+
+.description > span {
+	text-transform: uppercase;
+	color: hsl(228, 12%, 48%);
+	font-size: 12px;
+	letter-spacing: 3px;
+}
+
+.description h1 {
+	padding-top: 20px;
+	font-size: 35px;
+	font-family: 'Fraunces', sans-serif;
+	line-height: 32px;	
+}
+
+.description p {
+	padding-top: 25px;
+	line-height: 25px;	
+	color: hsl(228, 12%, 48%);
+	font-size: 15px;
+}
+
+.perfume {
+	width: 50%;
+	background-image: url("images/image-product-desktop.jpg");
+	background-size: cover;
+	border-radius: 10px 0 0 10px;
+}
+
+.price {
+	padding-top: 20px;
+	color: hsl(158, 36%, 37%);
+	font-family: 'Fraunces', sans-serif;
+	font-size: 32px;
+	font-weight: 700;
+	display: flex;
+	align-items: center;
+}
+
+.price s {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 13px;
+	color: hsl(228, 12%, 48%);
+	font-weight: 400;
+	margin-left: 15px;
+}
+
+.addtocart {
+	width: 100%;
+	display: inline-block;
+	margin-top: 20px;
+	background-color: hsl(158, 36%, 37%);
+	border-radius: 10px;
+	font-size: 15px;
+	font-weight: 700;
+	padding: 15px 60px;
+	color: #fff;
+	text-decoration: none;
+	text-align: center;
+}
+
+.addtocart:hover {
+	background-color: hsl(212, 21%, 14%);
+}
+
+.cart {
+	background: url("images/icon-cart.svg");
+	height: 15px;
+  	width: 15px;
+  	display: inline-block;
+  	margin-right: 10px;
+}
+
+@media screen and (max-width: 1440px) {
+
+body {
+	width: 375px;
+}
+
+.box-container {
+	height: 90vh;
+	width: 100vw;
+	flex-wrap: wrap;
+	flex-direction: row;
+}
+
+.description, .perfume {
+	width: 100%;
+}
+
+.perfume {
+	height: 40%;
+	background-size: 100%;
+	border-radius: 10px 10px 0 0;
+
+}
+
+.description {
+	height: 60%;
+	border-radius: 0 0 10px 10px;
+}
+
+.description h1 {
+
+	font-size: 30px;
+}
+
+.description p {
+
+	font-size: 14px;
+}
+
+}
